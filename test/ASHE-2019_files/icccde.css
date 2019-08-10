@@ -1,0 +1,182 @@
+@keyframes slide-right {
+    from {
+      left: 100vw;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes slide-left {
+    from {
+      left: -100vw;
+    }
+    to {
+      left: 0;
+    }
+  }
+*{
+    box-sizing: border-box; /*1a242f*/
+}
+body{
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+}
+.title-heading{
+    font-size: 18px;
+    color: white;
+    padding:0;
+    margin:0;
+}
+.main-heading{
+    font-size: 32px;
+    color:white;
+    padding:0;
+    margin:0;
+}
+.sub-heading{
+    font-size: 28px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.bg-college{
+    background-image: url("1.jpg");
+    opacity: 1;
+    /* Set a specific height */
+    height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-custom{
+    border-bottom: 2px solid #202d3b;
+    background-color: #1D2951;
+}
+.main{
+    background-color: #1D2951;
+    height: 60vh;
+    width: 100vw;
+}
+.bs-header{
+    color: white;
+    margin-top:100px;
+    position: relative;
+}
+.bs-header>h1{
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    overflow: hidden;
+    animation: slide-right 3s;
+    padding:0;
+    margin:0;
+}
+.bs-header>h3{
+    padding-top:10px;
+    margin:0;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    animation: slide-right 3s;
+    overflow: hidden;
+}
+.bs-header>p{
+    text-align: center;
+    position: relative;
+    font-size:13px;
+    overflow: hidden;
+    animation: slide-left 3s;
+    width:100%;
+}
+.bs-header>p:hover{
+    text-align: center;
+    position: relative;
+    font-size:13px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+/*NAVBAR LINKS */
+nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+.active{
+    border-bottom:2px solid white;
+}
+.navbar-item{
+    margin-left: 10px;
+    margin-right:10px;
+    text-align: center;
+}
+.navbar-item:hover {
+    border-bottom:2px solid white;
+    transition: 0.1s;
+    text-align: center;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.pc-only{
+    visibility: hidden;
+}
+#speakers{
+    background:#f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+@media only screen and (min-width: 768px){
+.main{
+    height: 86vh;
+}
+.pc-only{
+    visibility: visible;
+}
+.bs-header{
+    left:0;
+}
+.bs-header>h1{
+    padding:0px;
+    margin:0px;
+    text-align: left;
+    animation: slide-right 3s;
+    font-size: 60px;
+}
+.bs-header>h3{
+    text-align: left;
+    padding-top:10px;
+    margin:0px;
+    animation: slide-right 3s;
+    font-size: 25px;
+}
+.bs-header>p{
+    text-align: left;
+    font-size:25px;
+    animation: slide-left 3s;
+}
+.bs-header>p:hover{
+    text-align: left;
+    font-size:25px;
+    text-decoration: underline;
+}
+.stick{
+    position: sticky;
+    top: 60;
+}
+.support{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 150px;
+}
+}
+
+    
+
+
+
